@@ -1,0 +1,52 @@
+{
+  "expo": {
+    "name": "PDDS",
+    "slug": "Crop-Oracle",
+    "version": "1.0.1",
+    "orientation": "portrait",
+    "icon": "./assets/iconn.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/backa.jpg",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "Allow $(PRODUCT_NAME) to access your camera"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/iconn.png",
+        "backgroundColor": "#ffffff"
+      },
+      "permissions": [
+        "android.permission.CAMERA"
+      ],
+      "package": "com.paul_ndalila.mobileapp"
+    },
+    "web": {
+      "favicon": "./assets/iconn.png"
+    },
+    "plugins": [
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "usesCleartextTraffic": true
+          }
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "7de1c830-e396-46ff-861c-76c1b3141cec"
+      }
+    }
+  }
+}
